@@ -1,4 +1,9 @@
+var numero = 6;
 function agregarLi () {
-	var ingreso = prompt("Agregar Elemento al final ", "");
-	$(".ulClass").append("<li>" + ingreso + "</li>");
+	numero = numero + 1;
+	$(".ulClass").append("<li>" + numero + "</li>");
+}
+
+function eliminarPrimer () {
+	$("li:nth-child(1)").remove();
 }
